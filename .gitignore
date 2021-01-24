@@ -1,0 +1,10 @@
+    # Ignores files of varying extensions
+    *.vs
+    *.dmg
+    *.gz
+    *.iso
+    *.jar
+    *.rar
+    *.tar
+    *.zip
+    *.class
