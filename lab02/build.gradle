@@ -1,8 +1,3 @@
-// Author: Michael Valdron
-// CSCI 2020U
-// This is an example of a starter 'build.gradle' file
-// Reference: https://docs.gradle.org/current/samples/sample_building_java_applications.html
-
 /* Plugins */
 // Reference: https://docs.gradle.org/current/userguide/java_plugin.html
 
@@ -18,4 +13,19 @@ plugins {
 
 /* Main Class Definition */
 
-mainClassName = 'csci2020u.SimpleTest'
+mainClassName = 'csci2020u.lab02.CSVDemo'
+
+/* Repositories Block */
+// Reference: https://docs.gradle.org/current/userguide/declaring_dependencies.html
+
+repositories {
+	mavenCentral() // Uses the 'Maven Central' repository for fetching libraries
+	// ...
+}
+
+/* Dependencies Block */
+// Reference: https://docs.gradle.org/current/userguide/declaring_dependencies.html
+
+dependencies {
+	compile 'org.apache.commons:commons-csv:1.8'
+}

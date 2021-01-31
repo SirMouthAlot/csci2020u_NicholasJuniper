@@ -1,4 +1,4 @@
-package csci2020u;
+package csci2020u.lab02;
 
 public class SimpleTest
 {
