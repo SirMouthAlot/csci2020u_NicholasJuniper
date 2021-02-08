@@ -16,7 +16,7 @@ public class PhoneTextField extends TextField
     public PhoneTextField()
     {
         super();
-        setText("___-___-____");
+        setText("000-000-0000");
 
         phoneNumber = Pattern.compile("^\\d{3}-\\d{3}-\\d{4}$");
 
@@ -33,7 +33,7 @@ public class PhoneTextField extends TextField
             if (!Validate())
             {
                 //Reset the text to the default
-                setText("___-___-____");
+                setText("000-000-0000");
                 selectAll();
             }
         }
@@ -44,5 +44,4 @@ public class PhoneTextField extends TextField
         //Uses our compiled regex pattern to check if our text matches phone number format
         return phoneNumber.matcher(getText()).matches();
     }
-
 }
